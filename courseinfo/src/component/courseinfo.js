@@ -2,17 +2,11 @@ import React from 'react';
 
 const Header = ({ title }) => <h2>{title}</h2>;
 
-const Part = ({ part, exercises }) => (
-    <p>
-      {part} {exercises}
-    </p>
-);
+const Part = ({ part, exercises }) => <p>{part} {exercises}</p>;
 
 const Content = ({ parts }) => (
   <>
-    {parts.map(part => (
-      <Part key={part.id} part={part.name} exercises={part.exercises} />
-    ))}
+    {parts.map(part => <Part key={part.id} part={part.name} exercises={part.exercises} />)}
   </>
 );
 
