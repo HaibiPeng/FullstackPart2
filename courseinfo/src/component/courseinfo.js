@@ -6,7 +6,11 @@ const Part = ({ part, exercises }) => <p>{part} {exercises}</p>;
 
 const Content = ({ parts }) => (
   <>
+<<<<<<< HEAD
     {parts.map(part => <Part key={part.id} part={part.name} exercises={part.exercises} />)}
+=======
+    {parts.map(part => (<Part key={part.id} part={part.name} exercises={part.exercises} />))}
+>>>>>>> ddb650527d0c56e0b8bc87c1fa927a80d5525efc
   </>
 );
 
